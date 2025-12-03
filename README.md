@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# Doc Lab Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Playground frontend para simular flujos de análisis de documentos.**
 
-Currently, two official plugins are available:
+> [!NOTE]
+> Este proyecto es un entorno personal de práctica para UI de SaaS de documentos. **No está afiliado a ninguna empresa real.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Screenshot](https://via.placeholder.com/800x400?text=Doc+Lab+Practice+Preview)
 
-## React Compiler
+## 🎯 Objetivo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El objetivo de este proyecto es crear una interfaz de usuario moderna y profesional para simular flujos de trabajo de análisis de documentos (OCR, extracción de datos, validación), utilizando las mejores prácticas de desarrollo frontend.
 
-## Expanding the ESLint configuration
+## 🛠️ Stack Tecnológico
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Core**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS v4
+- **Architecture**: Estructura modular y escalable
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Scripts del Proyecto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Inicia el servidor de desarrollo local |
+| `npm run build` | Compila el proyecto para producción |
+| `npm run preview` | Previsualiza la build de producción localmente |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💻 Guía de Desarrollo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Instalación
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/Fasping/doc-lab-practice.git
+   cd doc-lab-practice
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Arrancar el servidor**
+   ```bash
+   npm run dev
+   ```
+
+### Buenas Prácticas
+
+- **Naming**: PascalCase para componentes, camelCase para funciones/variables.
+- **Estructura**: `src/components/ui` para componentes base, `src/pages` para vistas.
+- **UI**: Mantener la estética limpia, mucho espacio en blanco y tipografía Inter.
+- **Clean Code**: Componentes pequeños, reutilizables y tipados estrictamente.
+
+## 🗺️ Roadmap
+
+- [x] **v0.0** - Inicialización del proyecto (Vite + Tailwind)
+- [ ] **v0.1** - Base de estilos, documentación y estructura profesional
+- [ ] **v1.0** - Upload PDF + mock extractor
+- [ ] **v1.5** - Dashboard UI + routing avanzado
+- [ ] **v2.0** - Integración real con APIs
+- [ ] **Futuro** - Auth, dark mode, analytics...
