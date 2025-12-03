@@ -1,63 +1,54 @@
 # Doc Lab Practice
 
-**Playground frontend para simular flujos de análisis de documentos.**
+**Frontend playground for simulating document analysis workflows.**
 
 > [!NOTE]
-> Este proyecto es un entorno personal de práctica para UI de SaaS de documentos. **No está afiliado a ninguna empresa real.**
+> This project is a personal practice environment for document SaaS UI. **It is not affiliated with any real company.**
 
 ![Project Screenshot](https://via.placeholder.com/800x400?text=Doc+Lab+Practice+Preview)
 
-## 🎯 Objetivo
+## 🎯 Objective
 
-El objetivo de este proyecto es crear una interfaz de usuario moderna y profesional para simular flujos de trabajo de análisis de documentos (OCR, extracción de datos, validación), utilizando las mejores prácticas de desarrollo frontend.
+The goal of this project is to create a modern and professional user interface to simulate document analysis workflows (OCR, data extraction, validation), using frontend development best practices.
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 
 - **Core**: React 18 + TypeScript
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS v4
-- **Architecture**: Estructura modular y escalable
+- **Architecture**: Modular and scalable structure
 
-## 🚀 Scripts del Proyecto
+## 🚀 Project Scripts
 
-| Comando | Descripción |
+| Command | Description |
 |---------|-------------|
-| `npm run dev` | Inicia el servidor de desarrollo local |
-| `npm run build` | Compila el proyecto para producción |
-| `npm run preview` | Previsualiza la build de producción localmente |
+| `npm run dev` | Starts the local development server |
+| `npm run build` | Builds the project for production |
+| `npm run preview` | Previews the production build locally |
 
-## 💻 Guía de Desarrollo
+## 💻 Development Guide
 
-### Instalación
+### Installation
 
-1. **Clonar el repositorio**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/Fasping/doc-lab-practice.git
    cd doc-lab-practice
    ```
 
-2. **Instalar dependencias**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Arrancar el servidor**
+3. **Start the server**
    ```bash
    npm run dev
    ```
 
-### Buenas Prácticas
+### Best Practices
 
-- **Naming**: PascalCase para componentes, camelCase para funciones/variables.
-- **Estructura**: `src/components/ui` para componentes base, `src/pages` para vistas.
-- **UI**: Mantener la estética limpia, mucho espacio en blanco y tipografía Inter.
-- **Clean Code**: Componentes pequeños, reutilizables y tipados estrictamente.
-
-## 🗺️ Roadmap
-
-- [x] **v0.0** - Inicialización del proyecto (Vite + Tailwind)
-- [ ] **v0.1** - Base de estilos, documentación y estructura profesional
-- [ ] **v1.0** - Upload PDF + mock extractor
-- [ ] **v1.5** - Dashboard UI + routing avanzado
-- [ ] **v2.0** - Integración real con APIs
-- [ ] **Futuro** - Auth, dark mode, analytics...
+- **Naming**: PascalCase for components, camelCase for functions/variables.
+- **Structure**: `src/components/ui` for base components, `src/pages` for views.
+- **UI**: Maintain clean aesthetics, plenty of whitespace, and Inter typography.
+- **Clean Code**: Small, reusable, and strictly typed components.
