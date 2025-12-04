@@ -1,11 +1,9 @@
-# Doc Lab Practice
+# Doc Lab App
 
 **Frontend playground for simulating document analysis workflows.**
 
 > [!NOTE]
 > This project is a personal practice environment for document SaaS UI. **It is not affiliated with any real company.**
-
-![Project Screenshot](https://via.placeholder.com/800x400?text=Doc+Lab+Practice+Preview)
 
 ## 🎯 Objective
 
@@ -32,8 +30,8 @@ The goal of this project is to create a modern and professional user interface t
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Fasping/doc-lab-practice.git
-   cd doc-lab-practice
+   git clone https://github.com/Fasping/doc-lab-app.git
+   cd doc-lab-app
    ```
 
 2. **Install dependencies**
