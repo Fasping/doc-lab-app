@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 interface AppShellProps {
     children: React.ReactNode;
@@ -14,15 +15,39 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                 </div>
 
                 <nav className="flex-1 px-4 space-y-2 mt-4">
-                    <a href="#" className="block px-4 py-2 rounded-lg bg-slate-800 text-white font-medium">
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            `block px-4 py-2 rounded-lg font-medium transition-colors ${isActive
+                                ? 'bg-slate-800 text-white'
+                                : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                            }`
+                        }
+                    >
                         Dashboard
-                    </a>
-                    <a href="#" className="block px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-800 hover:text-white transition-colors">
+                    </NavLink>
+                    <NavLink
+                        to="/documents"
+                        className={({ isActive }) =>
+                            `block px-4 py-2 rounded-lg font-medium transition-colors ${isActive
+                                ? 'bg-slate-800 text-white'
+                                : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                            }`
+                        }
+                    >
                         Documents
-                    </a>
-                    <a href="#" className="block px-4 py-2 rounded-lg text-slate-400 hover:bg-slate-800 hover:text-white transition-colors">
+                    </NavLink>
+                    <NavLink
+                        to="/settings"
+                        className={({ isActive }) =>
+                            `block px-4 py-2 rounded-lg font-medium transition-colors ${isActive
+                                ? 'bg-slate-800 text-white'
+                                : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                            }`
+                        }
+                    >
                         Settings
-                    </a>
+                    </NavLink>
                 </nav>
 
                 <div className="p-4 border-t border-slate-800">
